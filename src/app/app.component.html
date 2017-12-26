@@ -1,20 +1,77 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header id="mu-hero" class="" role="banner">
+    <app-navbar></app-navbar>
+</header>
 
+<main role="main">
+    <!-- Start About -->
+    <section id="mu-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-about-area">
+                        <!-- Start Feature Content -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mu-about-left">
+                                    <img class="" src="assets/images/about.jpg" alt="Men Speaker">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mu-about-right">
+                                    <h2>About Us</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquam distinctio magni enim error commodi suscipit nobis alias nulla, itaque ex, vitae repellat amet neque est voluptatem iure maxime eius!</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus in accusamus qui sequi nisi, sint magni, ipsam, porro nesciunt id veritatis quaerat ipsum consequatur laborum, provident veniam quibusdam placeat quam?
+                                    </p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate perspiciatis magni omnis excepturi, cumque reiciendis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Feature Content -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Video -->
+    <section id="mu-video">
+        <div class="mu-video-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-video-area">
+                            <h2>Watch Video</h2>
+                            <a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Video content -->
+        <div class="mu-video-content">
+            <div class="mu-video-iframe-area">
+                <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <!--<iframe width="854" height="480" src="https://www.youtube.com/watch?v=d3MfUozeXiI" frameborder="0" allowfullscreen></iframe>-->
+            </div>
+        </div>
+        <!-- End Video content -->
+
+    </section>
+    <!-- End Video -->
+
+
+    <!-- Schedule -->
+    <!-- Start Schedule  -->
+    <section id="mu-schedule">
+        <app-schedule></app-schedule>
+    </section>
+    <!-- register -->
+    <section id="mu-register">
+        <app-register></app-register>
+    </section>
+</main>
